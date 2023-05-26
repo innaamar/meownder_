@@ -90,9 +90,7 @@ const Dashboard = () => {
                   onCardLeftScreen={() => outOfFrame(genderedUser.first_name)}
                 >
                   <div
-                    style={{
-                      backgroundImage: "url(" + genderedUser.url + ")",
-                    }}
+                    style={{ backgroundImage: "url(" + genderedUser.url + ")" }}
                     className="card"
                   >
                     <h3>{genderedUser.first_name}</h3>

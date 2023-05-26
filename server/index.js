@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Default
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   res.json("Hello to my app");
 });
 
@@ -166,7 +166,7 @@ app.get("/gendered-users", async (req, res) => {
     await client.connect();
     const database = client.db("app-data");
     const users = database.collection("users");
-    const query = { animal_identity: { $eq: gender } };
+    const query = { gender_identity: { $eq: gender } };
     const foundUsers = await users.find(query).toArray();
     res.json(foundUsers);
   } finally {

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@babel/preset-env": "^7.22.0",
     "@react-spring/web": "^9.7.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
