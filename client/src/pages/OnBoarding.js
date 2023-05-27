@@ -102,7 +102,7 @@ const OnBoarding = () => {
               />
             </div>
 
-            <label>Gender</label>
+            <label>Animal type</label>
             <div className="multiple-input-container">
               <input
                 id="dog-animal-identity"
@@ -181,7 +181,7 @@ const OnBoarding = () => {
               type="text"
               name="about"
               required={true}
-              placeholder="I like long walks..."
+              placeholder="I like to sleep all day..."
               value={formData.about}
               onChange={handleChange}
             />
